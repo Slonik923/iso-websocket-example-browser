@@ -1,0 +1,7 @@
+{
+	"extends": "@excalibur-enterprise/eslint-config-xclbr/ts",
+	"rules":
+	{
+		"no-console": "off"
+	}
+}

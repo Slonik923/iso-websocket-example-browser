@@ -1,0 +1,25 @@
+{
+  "name": "ws-test-html",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js && cp -r public/* dist",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.7",
+    "ts-loader": "^9.2.6",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.4.4",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@excalibur-enterprise/rpc-websocket": "file:../websocket",
+    "jquery": "^3.6.0"
+  }
+}
